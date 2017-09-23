@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="GestChequePharmacie_ASP.Menu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+     
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+    <form id="form1" runat="server">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Accueil.aspx" Text="Accueil    |" Value="Accueil    |"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Connexion.aspx" Text="    Connexion" Value="Connexion"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/MAJCHeque.aspx" Text="|        MAJ Cheque" Value="MAJ Cheque"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/WebForm3.aspx" Text="|   Web Service TOTAL Montant" Value="Web Service TOTAL Montant"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+         
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
